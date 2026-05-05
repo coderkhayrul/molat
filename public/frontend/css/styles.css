@@ -49,24 +49,139 @@ body {
 }
 
 /* Book Cards */
-.book-card {
+
+/* Book Cover Image */
+.book-cover-large {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px;
+}
+
+/* Badges */
+.badge-category {
+    background-color: rgba(243, 156, 18, 0.1);
+    color: #d35400;
+    padding: 8px 15px;
+    font-weight: 600;
+    border-radius: 20px;
+}
+
+/* Action Buttons */
+.btn-add-cart {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 25px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn-add-cart:hover {
+    background-color: #1a252f;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.btn-wishlist {
+    background-color: #fff;
+    color: #e74c3c;
+    border: 2px solid #e74c3c;
+    padding: 10px 20px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn-wishlist:hover {
+    background-color: #e74c3c;
+    color: white;
+}
+
+/* Table Info */
+.book-info-table th {
+    color: #7f8c8d;
+    font-weight: 500;
+    width: 130px;
+}
+
+.book-info-table td {
+    font-weight: 600;
+}
+
+/* Custom Tabs */
+.nav-tabs .nav-link {
+    color: var(--primary-color);
+    font-weight: 600;
+    border: none;
+    border-bottom: 3px solid transparent;
+    padding: 12px 25px;
+}
+
+.nav-tabs .nav-link.active {
+    color: var(--accent-color);
+    background-color: transparent;
+    border-bottom: 3px solid var(--accent-color);
+}
+
+/* Review Section */
+.review-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #eee;
+    margin-bottom: 20px;
+}
+
+.user-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+/* Related Books Card */
+.related-book-card {
     border: none;
     transition: 0.3s;
     border-radius: 12px;
     overflow: hidden;
     background: #fff;
-    height: 100%;
 }
 
-.book-card:hover {
-    transform: translateY(-10px);
+.related-book-card:hover {
+    transform: translateY(-8px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-.book-img {
-    height: 300px;
-    object-fit: cover;
+/* Book Preview Modal Paper Style */
+.preview-paper {
+    background-color: #fcfbf9;
+    font-family: Georgia, serif;
+    font-size: 1.15rem;
+    line-height: 1.9;
+    color: #333;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.03);
 }
+
+/* Sidebar Filters */
+.filter-sidebar {
+    background: #fff;
+    border-radius: 12px;
+    padding: 25px;
+    position: sticky;
+    top: 90px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.filter-title {
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--accent-color);
+}
+
 
 /* Author Circle */
 .author-img {
@@ -99,10 +214,6 @@ body {
     margin-bottom: 10px;
 }
 
-.book-card {
-    text-decoration: none;
-    color: inherit;
-}
 
 /* Announcement Section */
 .announcement-bar {
@@ -110,6 +221,13 @@ body {
     color: white;
     padding: 10px 0;
 }
+
+/*
+============================
+=== EVENTS PAGE STYLES ===
+============================
+*/
+
 
 /*
 ============================
@@ -559,25 +677,7 @@ body {
 }
 
 /* Wishlist Cards (Reusing Book Card styling) */
-.book-card {
-    border: 1px solid #eee;
-    border-radius: 12px;
-    overflow: hidden;
-    transition: 0.3s;
-    height: 100%;
-}
 
-.book-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
-    border-color: var(--accent-color);
-}
-
-.book-img {
-    height: 200px;
-    width: 100%;
-    object-fit: cover;
-}
 
 /* Form Inputs */
 .form-control:focus {

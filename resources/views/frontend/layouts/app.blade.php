@@ -64,6 +64,27 @@
             }
         });
     </script>
+
+    <!-- Script to handle Payment Method Selection visually -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const paymentCards = document.querySelectorAll('.payment-method-card');
+            const paymentRadios = document.querySelectorAll('.payment-radio');
+
+            paymentCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    // Remove active class from all cards
+                    paymentCards.forEach(c => c.classList.remove('active'));
+                    // Add active class to clicked card
+                    this.classList.add('active');
+
+                    // Select the hidden radio button inside this card
+                    const radio = this.querySelector('.payment-radio');
+                    radio.checked = true;
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>

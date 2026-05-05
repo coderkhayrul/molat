@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container">
-        <a class="navbar-brand fw-bold" href="home.html">বই<span class="text-warning">মেলা</span></a>
+        <a class="navbar-brand fw-bold" href="{{ route('frontend.home') }}">Mo<span class="text-warning">lat</span></a>
 
         <!-- Mobile Actions (Cart, User Profile & Toggler) -->
         <div class="d-flex align-items-center gap-3 d-lg-none">
