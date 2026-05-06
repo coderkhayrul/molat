@@ -35,4 +35,34 @@ class FrontendController extends Controller
     {
         return view('frontend.events');
     }
+
+    public function publishers()
+    {
+        return view('frontend.publishers');
+    }
+
+    public function publisherDetail()
+    {
+        return view('frontend.publisher');
+    }
+
+    public function authors()
+    {
+        return view('frontend.authors');
+    }
+
+    public function authorDetail()
+    {
+        return view('frontend.author');
+    }
+
+    public function profile()
+    {
+        return view('frontend.profile');
+    }
+
+    public function success()
+    {
+        return view('frontend.success');
+    }
 }

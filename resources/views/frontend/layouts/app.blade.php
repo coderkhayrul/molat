@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ asset('frontend/css/styles.css') }}">
+    @stack('styles')
 </head>
 
 <body>
@@ -36,6 +37,7 @@
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="{{ asset('frontend/js/script.js') }}"></script>
+    @stack('scripts')
 
     <script>
         // Initialize Authors Carousel

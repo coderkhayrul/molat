@@ -64,7 +64,6 @@
 
             <!-- Main Content / Event List -->
             <main class="col-lg-8">
-
                 <div class="d-flex justify-content-between align-items-center mb-4">
                     <h5 class="fw-bold mb-0">আসন্ন প্রোগ্রামসমূহ</h5>
                     <span class="badge bg-secondary">মোট ৫টি ইভেন্ট</span>

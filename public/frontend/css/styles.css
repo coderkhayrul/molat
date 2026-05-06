@@ -224,16 +224,503 @@ body {
 
 /*
 ============================
-=== EVENTS PAGE STYLES ===
+=== PUBLISHERS PAGE STYLES ===
 ============================
 */
 
+/* Publisher Card Styling */
+.publisher-card {
+    border: none;
+    transition: 0.3s;
+    border-radius: 12px;
+    background: #fff;
+    padding: 25px 20px;
+    text-align: center;
+    height: 100%;
+    border: 1px solid #f0f0f0;
+}
+
+.publisher-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+    border-color: var(--accent-color);
+}
+
+.publisher-logo-wrapper {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 20px;
+    border-radius: 15px;
+    background: #fff;
+    padding: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #eee;
+}
+
+.publisher-logo {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.stall-badge {
+    background-color: rgba(243, 156, 18, 0.1);
+    color: #d35400;
+    font-weight: 600;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+/* Search and Filter Section */
+.search-filter-section {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    border: 1px solid #eee;
+}
+
+footer {
+    background: #1a1a1a;
+    color: #ccc;
+    padding: 50px 0 20px;
+    margin-top: 50px;
+}
+
+.page-link {
+    color: var(--primary-color);
+}
+
+.page-item.active .page-link {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.text-truncate-3 {
+    display: -webkit-box;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 0.95rem;
+    color: #6c757d;
+}
+
+.book-count {
+    font-size: 0.85rem;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+/*
+============================
+=== PUBLISHER DETAIL PAGE STYLES ===
+============================
+*/
+
+/* Publisher Cover & Logo */
+.publisher-cover {
+    height: 320px;
+    background: linear-gradient(rgba(44, 62, 80, 0.6), rgba(44, 62, 80, 0.8)), url('https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.publisher-logo-wrapper {
+    margin-top: -75px;
+    position: relative;
+    z-index: 10;
+    width: 160px;
+    height: 160px;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #fff;
+    overflow: hidden;
+}
+
+.publisher-logo-wrapper i {
+    font-size: 4.5rem;
+    color: var(--primary-color);
+}
+
+/* Stall Highlight Badge */
+.stall-highlight-badge {
+    background: rgba(243, 156, 18, 0.15);
+    color: #d35400;
+    border: 1px solid rgba(243, 156, 18, 0.3);
+    padding: 8px 20px;
+    border-radius: 30px;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.1rem;
+}
+
+/* Stats */
+.stat-box {
+    text-align: center;
+    padding: 15px 25px;
+    border-right: 1px solid #dee2e6;
+}
+
+.stat-box:last-child {
+    border-right: none;
+}
+
+.stat-num {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0;
+    line-height: 1;
+}
+
+.stat-label {
+    font-size: 0.85rem;
+    color: #6c757d;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+/* Section Titles */
+.section-title {
+    border-left: 4px solid var(--accent-color);
+    padding-left: 12px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+/* Tabs */
+.nav-tabs .nav-link {
+    color: var(--primary-color);
+    font-weight: 600;
+    border: none;
+    border-bottom: 3px solid transparent;
+    padding: 12px 25px;
+}
+
+.nav-tabs .nav-link.active {
+    color: var(--accent-color);
+    background-color: transparent;
+    border-bottom: 3px solid var(--accent-color);
+}
+
+/* Info List */
+.info-list {
+    list-style: none;
+    padding: 0;
+}
+
+.info-list li {
+    margin-bottom: 15px;
+    color: #555;
+    display: flex;
+    align-items: center;
+    font-size: 0.95rem;
+}
+
+.info-list li i {
+    color: var(--accent-color);
+    margin-right: 12px;
+    width: 20px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+/* Social Icons */
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: #f8f9fa;
+    color: var(--primary-color);
+    margin-right: 10px;
+    transition: 0.3s;
+    text-decoration: none;
+    border: 1px solid #eee;
+}
+
+.social-links a:hover {
+    background-color: var(--accent-color);
+    color: #fff;
+    border-color: var(--accent-color);
+    transform: translateY(-3px);
+}
+
+/* Search Box */
+.publisher-search {
+    background: #fff;
+    border-radius: 30px;
+    padding: 8px 25px;
+    border: 1px solid #e9ecef;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+}
+
+.publisher-search input {
+    border: none;
+    background: transparent;
+    box-shadow: none;
+}
+
+.publisher-search input:focus {
+    box-shadow: none;
+}
+
+/*
+============================
+=== AUTHORS PAGE STYLES ===
+============================
+*/
+
+/* Author Card Styling */
+.author-card {
+    border: none;
+    transition: 0.3s;
+    border-radius: 15px;
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    height: 100%;
+}
+
+.author-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+
+.author-img-wrapper {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.author-img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #eee;
+    transition: 0.3s;
+}
+
+.author-card:hover .author-img {
+    border-color: var(--accent-color);
+}
+
+.book-count-badge {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: var(--accent-color);
+    color: #fff;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 0.85rem;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Search and Filter Section */
+.search-filter-section {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    border: 1px solid #eee;
+}
+
+.page-link {
+    color: var(--primary-color);
+}
+
+.page-item.active .page-link {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+/* Truncate text to 3 lines */
+.text-truncate-3 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    overflow: hidden;
+}
+
+/*
+============================
+=== AUTHOR PAGE STYLES ===
+============================
+*/
+/* Author Profile Cover & Avatar */
+.author-cover {
+    height: 350px;
+    background: linear-gradient(rgba(44, 62, 80, 0.7), rgba(44, 62, 80, 0.9)), url('https://images.unsplash.com/photo-1455390582262-044cdead27d8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.author-quote-overlay {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 80%;
+}
+
+.author-quote-overlay p {
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.author-avatar-wrapper {
+    margin-top: -80px;
+    position: relative;
+    z-index: 10;
+}
+
+.author-avatar {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    object-fit: cover;
+    background-color: #fff;
+}
+
+/* Profile Stats & Actions */
+.stat-box {
+    text-align: center;
+    padding: 10px 20px;
+    border-right: 1px solid #eee;
+}
+
+.stat-box:last-child {
+    border-right: none;
+}
+
+.stat-num {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0;
+    line-height: 1.2;
+}
+
+.stat-label {
+    font-size: 0.85rem;
+    color: #7f8c8d;
+    text-transform: uppercase;
+}
+
+/* Section Titles */
+.section-title {
+    border-left: 4px solid var(--accent-color);
+    padding-left: 12px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+/* Custom Tabs */
+.nav-tabs .nav-link {
+    color: var(--primary-color);
+    font-weight: 600;
+    border: none;
+    border-bottom: 3px solid transparent;
+    padding: 12px 25px;
+}
+
+.nav-tabs .nav-link.active {
+    color: var(--accent-color);
+    background-color: transparent;
+    border-bottom: 3px solid var(--accent-color);
+}
+
+/* Latest Release Highlight */
+.latest-release-card {
+    background: linear-gradient(to right, #ffffff, #fdf8e4);
+    border: 1px solid #fdebd0;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Info List */
+.info-list {
+    list-style: none;
+    padding: 0;
+}
+
+.info-list li {
+    margin-bottom: 12px;
+    color: #555;
+    display: flex;
+    align-items: flex-start;
+}
+
+.info-list li i {
+    color: var(--accent-color);
+    margin-top: 5px;
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
+}
+
+/* Social Icons */
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f1f2f6;
+    color: var(--primary-color);
+    margin-right: 10px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    background-color: var(--accent-color);
+    color: #fff;
+    transform: translateY(-3px);
+}
 
 /*
 ============================
 === CATEGORY PAGE STYLES ===
 ============================
 */
+
 /* Category Pills Scrollable */
 .category-nav-wrapper {
     background: #fff;
