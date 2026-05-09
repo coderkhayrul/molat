@@ -28,7 +28,18 @@ class AuthenticatedSessionController extends Controller
 
         $request->session()->regenerate();
 
-        return redirect()->intended(route('dashboard', absolute: false));
+        $url = '';
+
+        // ইউজারের রোল চেক করে রিডাইরেক্ট ইউআরএল সেট করা
+        if ($request->user()->role === 'admin') {
+            $url = route('admin.dashboard');
+        } elseif ($request->user()->role === 'user') {
+            $url = route('frontend.profile'); // এখানে আপনার ইউজার ড্যাশবোর্ডের রাউট দিন
+        } else {
+            $url = route('frontend.home'); // ফলব্যাক রাউট
+        }
+
+        return redirect()->intended($url);
     }
 
     /**

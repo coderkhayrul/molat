@@ -24,8 +24,11 @@
                     <li>
                         <hr class="dropdown-divider">
                     </li>
-                    <li><a class="dropdown-item text-danger fw-bold" href="login.html"><i
-                                class="fas fa-sign-out-alt me-2"></i> লগআউট</a></li>
+                    <li><a class="dropdown-item text-danger fw-bold" href="{{ route('logout') }}"
+                            onclick="event.preventDefault();
+                                                this.closest('form').submit();">
+                            <i class="fas fa-sign-out-alt me-2"></i> লগআউট</a>
+                    </li>
                 </ul>
             </div>
 
@@ -47,22 +50,23 @@
         <!-- Desktop Actions & Collapse Menu (Hidden on Mobile) -->
         <div class="collapse navbar-collapse d-none d-lg-block" id="navbarNav">
             <ul class="navbar-nav ms-auto align-items-lg-center">
-                <li class="nav-item"><a class="nav-link active" href="home.html">হোম</a></li>
+                <li class="nav-item"><a class="nav-link active" href="{{ route('frontend.home') }}">হোম</a></li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         বইসমূহ
                     </a>
                     <ul class="dropdown-menu shadow-sm" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="categories.html">নতুন বই</a></li>
-                        <li><a class="dropdown-item" href="categories.html">জনপ্রিয় বই</a></li>
-                        <li><a class="dropdown-item" href="categories.html">শ্রেণীবদ্ধ বই</a></li>
+                        <li><a class="dropdown-item" href="{{ route('frontend.category.detail') }}">নতুন বই</a></li>
+                        <li><a class="dropdown-item" href="{{ route('frontend.category.detail') }}">জনপ্রিয় বই</a></li>
+                        <li><a class="dropdown-item" href="{{ route('frontend.category.detail') }}">শ্রেণীবদ্ধ বই</a>
+                        </li>
                     </ul>
                 </li>
-                <li class="nav-item"><a class="nav-link" href="#">লেখকবৃন্দ</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">প্রকাশনী</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">ইভেন্ট</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">যোগাযোগ</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ route('frontend.authors') }}">লেখকবৃন্দ</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ route('frontend.publishers') }}">প্রকাশনী</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ route('frontend.events') }}">ইভেন্ট</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ route('frontend.contact') }}">যোগাযোগ</a></li>
 
                 <!-- Cart Dropdown (Desktop Only) -->
                 <li class="nav-item dropdown ms-lg-3 d-none d-lg-block">
@@ -137,8 +141,11 @@
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item text-danger fw-bold" href="login.html"><i
-                                    class="fas fa-sign-out-alt me-2"></i> লগআউট</a></li>
+                        <li>
+                            <a class="dropdown-item text-danger fw-bold" href="{{ route('logout') }}">
+                                <i class="fas fa-sign-out-alt me-2"></i> লগআউট
+                            </a>
+                        </li>
                     </ul>
                 </li>
             </ul>
@@ -311,3 +318,8 @@
         </div>
     </div>
 </div>
+
+<!-- Authentication -->
+<form class="d-none form" method="POST" action="{{ route('logout') }}">
+    @csrf
+</form>

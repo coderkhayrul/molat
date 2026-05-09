@@ -36,6 +36,11 @@ class FrontendController extends Controller
         return view('frontend.events');
     }
 
+    public function eventDetail()
+    {
+        return view('frontend.event');
+    }
+
     public function publishers()
     {
         return view('frontend.publishers');
@@ -64,5 +69,10 @@ class FrontendController extends Controller
     public function success()
     {
         return view('frontend.success');
+    }
+
+    public function contact()
+    {
+        return view('frontend.contact');
     }
 }
