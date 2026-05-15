@@ -20,7 +20,7 @@
         <h3 class="section-title">বইয়ের ধরন (Categories)</h3>
         <div class="row g-3">
             <div class="col-md-2 col-6">
-                <a href="categories.html" class="book-card">
+                <a href="{{ route('frontend.category.detail') }}" class="book-card">
                     <div class="category-box shadow-sm">
                         <i class="fas fa-hat-wizard"></i>
                         <h6>উপন্যাস</h6>
@@ -28,7 +28,7 @@
                 </a>
             </div>
             <div class="col-md-2 col-6">
-                <a href="categories.html" class="book-card">
+                <a href="{{ route('frontend.category.detail') }}" class="book-card">
                     <div class="category-box shadow-sm">
                         <i class="fas fa-microscope"></i>
                         <h6>বিজ্ঞান</h6>
@@ -36,7 +36,7 @@
                 </a>
             </div>
             <div class="col-md-2 col-6">
-                <a href="categories.html" class="book-card">
+                <a href="{{ route('frontend.category.detail') }}" class="book-card">
                     <div class="category-box shadow-sm">
                         <i class="fas fa-history"></i>
                         <h6>ইতিহাস</h6>
@@ -44,7 +44,7 @@
                 </a>
             </div>
             <div class="col-md-2 col-6">
-                <a href="categories.html" class="book-card">
+                <a href="{{ route('frontend.category.detail') }}" class="book-card">
                     <div class="category-box shadow-sm">
                         <i class="fas fa-child"></i>
                         <h6>শিশুতোষ</h6>
@@ -52,7 +52,7 @@
                 </a>
             </div>
             <div class="col-md-2 col-6">
-                <a href="categories.html" class="book-card">
+                <a href="{{ route('frontend.category.detail') }}" class="book-card">
                     <div class="category-box shadow-sm">
                         <i class="fas fa-feather-alt"></i>
                         <h6>কবিতা</h6>
@@ -60,7 +60,7 @@
                 </a>
             </div>
             <div class="col-md-2 col-6">
-                <a href="#" class="book-card">
+                <a href="{{ route('frontend.category.detail') }}" class="book-card">
                     <div class="category-box shadow-sm">
                         <i class="fas fa-ellipsis-h"></i>
                         <h6>অন্যান্য</h6>
@@ -74,7 +74,7 @@
     <section class="container my-5">
         <div class="d-flex justify-content-between align-items-center mb-4">
             <h3 class="section-title mb-0">নির্বাচিত বইসমূহ</h3>
-            <a href="categories.html" class="btn btn-outline-primary btn-sm">সব দেখুন</a>
+            <a href="{{ route('frontend.category.detail') }}" class="btn btn-outline-primary btn-sm">সব দেখুন</a>
         </div>
         <div class="row g-4">
             <!-- Book 1 -->
@@ -91,8 +91,8 @@
                         <div class="d-flex justify-content-between align-items-center mt-auto pt-3 border-top">
                             <span class="h5 fw-bold text-primary mb-0">৳ ৪৫০</span>
                             <div class="d-flex gap-2">
-                                <a href="book_details.html" class="btn btn-sm btn-outline-dark" title="বিস্তারিত"><i
-                                        class="fas fa-eye"></i></a>
+                                <a href="{{ route('frontend.book.detail') }}" class="btn btn-sm btn-outline-dark"
+                                    title="বিস্তারিত"><i class="fas fa-eye"></i></a>
                                 <button class="btn btn-sm btn-warning fw-bold text-dark" title="কার্টে যোগ করুন"><i
                                         class="fas fa-cart-plus"></i></button>
                             </div>
@@ -113,8 +113,8 @@
                         <div class="d-flex justify-content-between align-items-center mt-auto pt-3 border-top">
                             <span class="h5 fw-bold text-primary mb-0">৳ ৩২০</span>
                             <div class="d-flex gap-2">
-                                <a href="book_details.html" class="btn btn-sm btn-outline-dark" title="বিস্তারিত"><i
-                                        class="fas fa-eye"></i></a>
+                                <a href="{{ route('frontend.book.detail') }}" class="btn btn-sm btn-outline-dark"
+                                    title="বিস্তারিত"><i class="fas fa-eye"></i></a>
                                 <button class="btn btn-sm btn-warning fw-bold text-dark" title="কার্টে যোগ করুন"><i
                                         class="fas fa-cart-plus"></i></button>
                             </div>
@@ -135,8 +135,8 @@
                         <div class="d-flex justify-content-between align-items-center mt-auto pt-3 border-top">
                             <span class="h5 fw-bold text-primary mb-0">৳ ৩০০</span>
                             <div class="d-flex gap-2">
-                                <a href="book_details.html" class="btn btn-sm btn-outline-dark" title="বিস্তারিত"><i
-                                        class="fas fa-eye"></i></a>
+                                <a href="{{ route('frontend.book.detail') }}" class="btn btn-sm btn-outline-dark"
+                                    title="বিস্তারিত"><i class="fas fa-eye"></i></a>
                                 <button class="btn btn-sm btn-warning fw-bold text-dark" title="কার্টে যোগ করুন"><i
                                         class="fas fa-cart-plus"></i></button>
                             </div>
@@ -157,8 +157,8 @@
                         <div class="d-flex justify-content-between align-items-center mt-auto pt-3 border-top">
                             <span class="h5 fw-bold text-primary mb-0">৳ ২০০</span>
                             <div class="d-flex gap-2">
-                                <a href="book_details.html" class="btn btn-sm btn-outline-dark" title="বিস্তারিত"><i
-                                        class="fas fa-eye"></i></a>
+                                <a href="{{ route('frontend.book.detail') }}" class="btn btn-sm btn-outline-dark"
+                                    title="বিস্তারিত"><i class="fas fa-eye"></i></a>
                                 <button class="btn btn-sm btn-warning fw-bold text-dark" title="কার্টে যোগ করুন"><i
                                         class="fas fa-cart-plus"></i></button>
                             </div>
@@ -173,7 +173,7 @@
     <section class="container my-5">
         <div class="d-flex justify-content-between align-items-center mb-4">
             <h3 class="section-title mb-0">নতুন প্রকাশিত বই</h3>
-            <a href="categories.html" class="btn btn-outline-primary btn-sm">সব দেখুন</a>
+            <a href="{{ route('frontend.category.detail') }}" class="btn btn-outline-primary btn-sm">সব দেখুন</a>
         </div>
         <div class="row g-4">
             <!-- Book 1 -->
@@ -189,8 +189,8 @@
                         <div class="d-flex justify-content-between align-items-center mt-auto pt-3 border-top">
                             <span class="h5 fw-bold text-primary mb-0">৳ ৪৫০</span>
                             <div class="d-flex gap-2">
-                                <a href="book_details.html" class="btn btn-sm btn-outline-dark" title="বিস্তারিত"><i
-                                        class="fas fa-eye"></i></a>
+                                <a href="{{ route('frontend.book.detail') }}" class="btn btn-sm btn-outline-dark"
+                                    title="বিস্তারিত"><i class="fas fa-eye"></i></a>
                                 <button class="btn btn-sm btn-warning fw-bold text-dark" title="কার্টে যোগ করুন"><i
                                         class="fas fa-cart-plus"></i></button>
                             </div>
@@ -211,8 +211,8 @@
                         <div class="d-flex justify-content-between align-items-center mt-auto pt-3 border-top">
                             <span class="h5 fw-bold text-primary mb-0">৳ ৩২০</span>
                             <div class="d-flex gap-2">
-                                <a href="book_details.html" class="btn btn-sm btn-outline-dark" title="বিস্তারিত"><i
-                                        class="fas fa-eye"></i></a>
+                                <a href="{{ route('frontend.book.detail') }}" class="btn btn-sm btn-outline-dark"
+                                    title="বিস্তারিত"><i class="fas fa-eye"></i></a>
                                 <button class="btn btn-sm btn-warning fw-bold text-dark" title="কার্টে যোগ করুন"><i
                                         class="fas fa-cart-plus"></i></button>
                             </div>
@@ -233,8 +233,8 @@
                         <div class="d-flex justify-content-between align-items-center mt-auto pt-3 border-top">
                             <span class="h5 fw-bold text-primary mb-0">৳ ৩০০</span>
                             <div class="d-flex gap-2">
-                                <a href="book_details.html" class="btn btn-sm btn-outline-dark" title="বিস্তারিত"><i
-                                        class="fas fa-eye"></i></a>
+                                <a href="{{ route('frontend.book.detail') }}" class="btn btn-sm btn-outline-dark"
+                                    title="বিস্তারিত"><i class="fas fa-eye"></i></a>
                                 <button class="btn btn-sm btn-warning fw-bold text-dark" title="কার্টে যোগ করুন"><i
                                         class="fas fa-cart-plus"></i></button>
                             </div>
@@ -255,8 +255,8 @@
                         <div class="d-flex justify-content-between align-items-center mt-auto pt-3 border-top">
                             <span class="h5 fw-bold text-primary mb-0">৳ ২০০</span>
                             <div class="d-flex gap-2">
-                                <a href="book_details.html" class="btn btn-sm btn-outline-dark" title="বিস্তারিত"><i
-                                        class="fas fa-eye"></i></a>
+                                <a href="{{ route('frontend.book.detail') }}" class="btn btn-sm btn-outline-dark"
+                                    title="বিস্তারিত"><i class="fas fa-eye"></i></a>
                                 <button class="btn btn-sm btn-warning fw-bold text-dark" title="কার্টে যোগ করুন"><i
                                         class="fas fa-cart-plus"></i></button>
                             </div>

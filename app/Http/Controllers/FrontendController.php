@@ -20,6 +20,10 @@ class FrontendController extends Controller
     {
         return view('frontend.checkout');
     }
+    public function userOrders()
+    {
+        return redirect()->back();
+    }
 
     public function categoryDetail()
     {

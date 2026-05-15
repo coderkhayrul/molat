@@ -15,7 +15,8 @@
                     <li>
                         <h6 class="dropdown-header text-primary fw-bold">স্বাগতম, ইউজার!</h6>
                     </li>
-                    <li><a class="dropdown-item" href="profile.html"><i class="fas fa-user me-2 text-muted"></i> আমার
+                    <li><a class="dropdown-item" href="{{ route('frontend.profile') }}"><i
+                                class="fas fa-user me-2 text-muted"></i> আমার
                             প্রোফাইল</a></li>
                     <li><a class="dropdown-item" href="#"><i class="fas fa-box-open me-2 text-muted"></i> আমার
                             অর্ডারসমূহ</a></li>
@@ -112,8 +113,10 @@
                                 <span class="text-success">৳ ৭৭০</span>
                             </div>
                             <div class="d-flex gap-2">
-                                <a href="cart.html" class="btn btn-outline-dark btn-sm w-50">কার্ট দেখুন</a>
-                                <a href="checkout.html" class="btn btn-warning btn-sm w-50 fw-bold">চেকআউট</a>
+                                <a href="{{ route('frontend.cart') }}" class="btn btn-outline-dark btn-sm w-50">কার্ট
+                                    দেখুন</a>
+                                <a href="{{ route('frontend.checkout') }}"
+                                    class="btn btn-warning btn-sm w-50 fw-bold">চেকআউট</a>
                             </div>
                         </div>
                     </div>
@@ -129,10 +132,12 @@
                         <li>
                             <h6 class="dropdown-header text-primary fw-bold">স্বাগতম, ইউজার!</h6>
                         </li>
-                        <li><a class="dropdown-item" href="profile.html"><i class="fas fa-user me-2 text-muted"></i>
+                        <li><a class="dropdown-item" href="{{ route('frontend.profile') }}"><i
+                                    class="fas fa-user me-2 text-muted"></i>
                                 আমার
                                 প্রোফাইল</a></li>
-                        <li><a class="dropdown-item" href="#"><i class="fas fa-box-open me-2 text-muted"></i>
+                        <li><a class="dropdown-item" href="{{ route('frontend.user.orders') }}"><i
+                                    class="fas fa-box-open me-2 text-muted"></i>
                                 আমার
                                 অর্ডারসমূহ</a></li>
                         <li><a class="dropdown-item" href="#"><i class="fas fa-heart me-2 text-muted"></i>
@@ -141,11 +146,13 @@
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-                        <li>
-                            <a class="dropdown-item text-danger fw-bold" href="{{ route('logout') }}">
-                                <i class="fas fa-sign-out-alt me-2"></i> লগআউট
-                            </a>
-                        </li>
+                        @auth
+                            <li>
+                                <a class="dropdown-item text-danger fw-bold" href="{{ route('logout') }}">
+                                    <i class="fas fa-sign-out-alt me-2"></i> লগআউট
+                                </a>
+                            </li>
+                        @endauth
                     </ul>
                 </li>
             </ul>
@@ -165,7 +172,8 @@
     <div class="offcanvas-body px-0">
         <ul class="navbar-nav">
             <li class="nav-item px-3 mb-2">
-                <a class="nav-link active text-white" href="home.html"><i class="fas fa-home me-2 text-muted"></i>
+                <a class="nav-link active text-white" href="{{ route('frontend.home') }}"><i
+                        class="fas fa-home me-2 text-muted"></i>
                     হোম</a>
             </li>
 
@@ -183,11 +191,14 @@
                 </a>
                 <div class="collapse" id="collapseNovel">
                     <ul class="list-unstyled ps-3 pb-2 m-0 border-start border-secondary ms-2 mt-1">
-                        <li><a href="categories.html" class="nav-link text-white-50 py-1 small">রোমান্টিক উপন্যাস</a>
+                        <li><a href="{{ route('frontend.category.detail') }}"
+                                class="nav-link text-white-50 py-1 small">রোমান্টিক উপন্যাস</a>
                         </li>
-                        <li><a href="categories.html" class="nav-link text-white-50 py-1 small">ঐতিহাসিক উপন্যাস</a>
+                        <li><a href="{{ route('frontend.category.detail') }}"
+                                class="nav-link text-white-50 py-1 small">ঐতিহাসিক উপন্যাস</a>
                         </li>
-                        <li><a href="categories.html" class="nav-link text-white-50 py-1 small">থ্রিলার ও গোয়েন্দা</a>
+                        <li><a href="{{ route('frontend.category.detail') }}"
+                                class="nav-link text-white-50 py-1 small">থ্রিলার ও গোয়েন্দা</a>
                         </li>
                     </ul>
                 </div>
@@ -203,9 +214,13 @@
                 </a>
                 <div class="collapse" id="collapseSciFi">
                     <ul class="list-unstyled ps-3 pb-2 m-0 border-start border-secondary ms-2 mt-1">
-                        <li><a href="categories.html" class="nav-link text-white-50 py-1 small">মহাকাশ অভিযান</a></li>
-                        <li><a href="categories.html" class="nav-link text-white-50 py-1 small">টাইম ট্রাভেল</a></li>
-                        <li><a href="categories.html" class="nav-link text-white-50 py-1 small">এলিয়েন ও ভিনগ্রহ</a>
+                        <li><a href="{{ route('frontend.category.detail') }}"
+                                class="nav-link text-white-50 py-1 small">মহাকাশ অভিযান</a></li>
+                        <li><a href="{{ route('frontend.category.detail') }}"
+                                class="nav-link text-white-50 py-1 small">টাইম
+                                ট্রাভেল</a></li>
+                        <li><a href="{{ route('frontend.category.detail') }}"
+                                class="nav-link text-white-50 py-1 small">এলিয়েন ও ভিনগ্রহ</a>
                         </li>
                     </ul>
                 </div>
@@ -221,11 +236,14 @@
                 </a>
                 <div class="collapse" id="collapseEdu">
                     <ul class="list-unstyled ps-3 pb-2 m-0 border-start border-secondary ms-2 mt-1">
-                        <li><a href="categories.html" class="nav-link text-white-50 py-1 small">প্রোগ্রামিং ও আইটি</a>
+                        <li><a href="{{ route('frontend.category.detail') }}"
+                                class="nav-link text-white-50 py-1 small">প্রোগ্রামিং ও আইটি</a>
                         </li>
-                        <li><a href="categories.html" class="nav-link text-white-50 py-1 small">বিসিএস ও ব্যাংক
+                        <li><a href="{{ route('frontend.category.detail') }}"
+                                class="nav-link text-white-50 py-1 small">বিসিএস ও ব্যাংক
                                 প্রস্তুতি</a></li>
-                        <li><a href="categories.html" class="nav-link text-white-50 py-1 small">বিশ্ববিদ্যালয়
+                        <li><a href="{{ route('frontend.category.detail') }}"
+                                class="nav-link text-white-50 py-1 small">বিশ্ববিদ্যালয়
                                 ভর্তি</a>
                         </li>
                     </ul>
@@ -234,23 +252,28 @@
 
             <!-- Direct Category Links -->
             <li class="nav-item mobile-menu-item px-3">
-                <a class="nav-link text-white-50 py-2" href="categories.html">কবিতা ও ছড়া</a>
+                <a class="nav-link text-white-50 py-2" href="{{ route('frontend.category.detail') }}">কবিতা ও ছড়া</a>
             </li>
             <li class="nav-item mobile-menu-item px-3">
-                <a class="nav-link text-white-50 py-2" href="categories.html">শিশুতোষ গল্প</a>
+                <a class="nav-link text-white-50 py-2" href="{{ route('frontend.category.detail') }}">শিশুতোষ
+                    গল্প</a>
             </li>
 
             <li class="nav-item mt-4 px-3 mb-1">
                 <h6 class="text-warning fw-bold small text-uppercase">অন্যান্য পেজ</h6>
             </li>
-            <li class="nav-item px-3"><a class="nav-link text-white-50 py-2" href="authors.html"><i
-                        class="fas fa-pen-nib me-2 text-muted"></i> লেখকবৃন্দ</a></li>
-            <li class="nav-item px-3"><a class="nav-link text-white-50 py-2" href="publishers.html"><i
-                        class="fas fa-building me-2 text-muted"></i> প্রকাশনী</a></li>
-            <li class="nav-item px-3"><a class="nav-link text-white-50 py-2" href="events.html"><i
-                        class="fas fa-calendar-alt me-2 text-muted"></i> ইভেন্ট</a></li>
-            <li class="nav-item px-3"><a class="nav-link text-white-50 py-2" href="contact.html"><i
-                        class="fas fa-envelope me-2 text-muted"></i> যোগাযোগ</a></li>
+            <li class="nav-item px-3"><a class="nav-link text-white-50 py-2"
+                    href="{{ route('frontend.authors') }}"><i class="fas fa-pen-nib me-2 text-muted"></i>
+                    লেখকবৃন্দ</a></li>
+            <li class="nav-item px-3"><a class="nav-link text-white-50 py-2"
+                    href="{{ route('frontend.publishers') }}"><i class="fas fa-building me-2 text-muted"></i>
+                    প্রকাশনী</a></li>
+            <li class="nav-item px-3"><a class="nav-link text-white-50 py-2"
+                    href="{{ route('frontend.events') }}"><i class="fas fa-calendar-alt me-2 text-muted"></i>
+                    ইভেন্ট</a></li>
+            <li class="nav-item px-3"><a class="nav-link text-white-50 py-2"
+                    href="{{ route('frontend.contact') }}"><i class="fas fa-envelope me-2 text-muted"></i>
+                    যোগাযোগ</a></li>
         </ul>
     </div>
 </div>
@@ -312,8 +335,8 @@
                 <span class="text-success">৳ ৮২০</span>
             </div>
             <div class="d-grid gap-2">
-                <a href="cart.html" class="btn btn-outline-dark fw-bold">কার্ট পেজ দেখুন</a>
-                <a href="checkout.html" class="btn btn-warning fw-bold text-dark">চেকআউট করুন</a>
+                <a href="{{ route('frontend.cart') }}" class="btn btn-outline-dark fw-bold">কার্ট পেজ দেখুন</a>
+                <a href="{{ route('frontend.checkout') }}" class="btn btn-warning fw-bold text-dark">চেকআউট করুন</a>
             </div>
         </div>
     </div>
