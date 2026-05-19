@@ -12,24 +12,37 @@
                     <i class="fas fa-user-circle fs-5"></i>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end shadow-sm border-0 mt-2 position-absolute">
-                    <li>
-                        <h6 class="dropdown-header text-primary fw-bold">স্বাগতম, ইউজার!</h6>
-                    </li>
-                    <li><a class="dropdown-item" href="{{ route('frontend.profile') }}"><i
-                                class="fas fa-user me-2 text-muted"></i> আমার
-                            প্রোফাইল</a></li>
-                    <li><a class="dropdown-item" href="#"><i class="fas fa-box-open me-2 text-muted"></i> আমার
-                            অর্ডারসমূহ</a></li>
-                    <li><a class="dropdown-item" href="#"><i class="fas fa-heart me-2 text-muted"></i>
-                            উইশলিস্ট</a></li>
-                    <li>
-                        <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item text-danger fw-bold" href="{{ route('logout') }}"
-                            onclick="event.preventDefault();
+                    @guest
+                        <li>
+                            <h6 class="dropdown-header text-primary fw-bold">স্বাগতম, অতিথি!</h6>
+                        </li>
+                        <li><a class="dropdown-item" href="{{ route('login') }}"><i
+                                    class="fas fa-sign-in-alt me-2 text-muted"></i> লগইন</a></li>
+                        <li><a class="dropdown-item" href="{{ route('register') }}"><i
+                                    class="fas fa-user-plus me-2 text-muted"></i> রেজিস্টার</a></li>
+                    @endguest
+
+                    @auth
+                        <li>
+                            <h6 class="dropdown-header text-primary fw-bold">স্বাগতম, ইউজার!</h6>
+                        </li>
+                        <li><a class="dropdown-item" href="{{ route('frontend.profile') }}"><i
+                                    class="fas fa-user me-2 text-muted"></i> আমার
+                                প্রোফাইল</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-box-open me-2 text-muted"></i> আমার
+                                অর্ডারসমূহ</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-heart me-2 text-muted"></i>
+                                উইশলিস্ট</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item text-danger fw-bold" href="{{ route('logout') }}"
+                                onclick="event.preventDefault();
                                                 this.closest('form').submit();">
-                            <i class="fas fa-sign-out-alt me-2"></i> লগআউট</a>
-                    </li>
+                                <i class="fas fa-sign-out-alt me-2"></i> লগআউট</a>
+                        </li>
+                    @endauth
+
                 </ul>
             </div>
 
@@ -129,30 +142,39 @@
                         <i class="fas fa-user-circle fs-5"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end shadow-sm border-0 mt-2">
-                        <li>
-                            <h6 class="dropdown-header text-primary fw-bold">স্বাগতম, ইউজার!</h6>
-                        </li>
-                        <li><a class="dropdown-item" href="{{ route('frontend.profile') }}"><i
-                                    class="fas fa-user me-2 text-muted"></i>
-                                আমার
-                                প্রোফাইল</a></li>
-                        <li><a class="dropdown-item" href="{{ route('frontend.user.orders') }}"><i
-                                    class="fas fa-box-open me-2 text-muted"></i>
-                                আমার
-                                অর্ডারসমূহ</a></li>
-                        <li><a class="dropdown-item" href="#"><i class="fas fa-heart me-2 text-muted"></i>
-                                উইশলিস্ট</a>
-                        </li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
                         @auth
+                            <li>
+                                <h6 class="dropdown-header text-primary fw-bold">স্বাগতম, ইউজার!</h6>
+                            </li>
+                            <li><a class="dropdown-item" href="{{ route('frontend.profile') }}"><i
+                                        class="fas fa-user me-2 text-muted"></i>
+                                    আমার
+                                    প্রোফাইল</a></li>
+                            <li><a class="dropdown-item" href="{{ route('frontend.user.orders') }}"><i
+                                        class="fas fa-box-open me-2 text-muted"></i>
+                                    আমার
+                                    অর্ডারসমূহ</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-heart me-2 text-muted"></i>
+                                    উইশলিস্ট</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
                             <li>
                                 <a class="dropdown-item text-danger fw-bold" href="{{ route('logout') }}">
                                     <i class="fas fa-sign-out-alt me-2"></i> লগআউট
                                 </a>
                             </li>
                         @endauth
+                        @guest
+                            <li>
+                                <h6 class="dropdown-header text-primary fw-bold">স্বাগতম, অতিথি!</h6>
+                            </li>
+                            <li><a class="dropdown-item" href="{{ route('login') }}"><i
+                                        class="fas fa-sign-in-alt me-2 text-muted"></i> লগইন</a></li>
+                            <li><a class="dropdown-item" href="{{ route('register') }}"><i
+                                        class="fas fa-user-plus me-2 text-muted"></i> রেজিস্টার</a></li>
+                        @endguest
                     </ul>
                 </li>
             </ul>
