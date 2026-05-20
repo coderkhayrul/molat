@@ -6,9 +6,9 @@
             <!-- Breadcrumb inside cover -->
             <nav aria-label="breadcrumb" class="pt-4">
                 <ol class="breadcrumb mb-0">
-                    <li class="breadcrumb-item"><a href="index.html" class="text-light text-decoration-none">হোম</a></li>
-                    <li class="breadcrumb-item"><a href="events.html" class="text-light text-decoration-none">ইভেন্ট</a></li>
-                    <li class="breadcrumb-item active text-white fw-bold" aria-current="page">বইয়ের মোড়ক উন্মোচন</li>
+                    <li class="breadcrumb-item"><a href="#" class="text-light text-decoration-none">হোম</a></li>
+                    <li class="breadcrumb-item"><a href="#" class="text-light text-decoration-none">ইভেন্ট</a></li>
+                    <li class="breadcrumb-item active text-white fw-bold" aria-current="page">বইয়ের মোড়ক উন্মোচন</li>
                 </ol>
             </nav>
 
@@ -208,13 +208,13 @@
                             alt="Book" class="rounded shadow-sm"
                             style="width: 70px; height: 100px; object-fit: cover;">
                         <div>
-                            <h6 class="fw-bold mb-1"><a href="book_details.html"
-                                    class="text-dark text-decoration-none">মহাকাশের রহস্য</a></h6>
+                            <h6 class="fw-bold mb-1"><a href="#" class="text-dark text-decoration-none">মহাকাশের
+                                    রহস্য</a></h6>
                             <p class="text-muted small mb-2">ড. মুহম্মদ জাফর ইকবাল</p>
                             <span class="text-success fw-bold">৳ ২৮০</span>
                         </div>
                     </div>
-                    <a href="book_details.html" class="btn btn-sm btn-dark w-100 mt-3">বইয়ের বিস্তারিত দেখুন</a>
+                    <a href="#" class="btn btn-sm btn-dark w-100 mt-3">বইয়ের বিস্তারিত দেখুন</a>
                 </div>
 
             </div>

@@ -5,9 +5,9 @@
         <div class="container">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb mb-0 small">
-                    <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none">হোম</a></li>
+                    <li class="breadcrumb-item"><a href="#" class="text-decoration-none">হোম</a></li>
                     <li class="breadcrumb-item"><a href="#" class="text-decoration-none">ক্যাটাগরি</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">সায়েন্স ফিকশন</li>
+                    <li class="breadcrumb-item active" aria-current="page">সায়েন্স ফিকশন</li>
                 </ol>
             </nav>
         </div>
@@ -58,7 +58,7 @@
                             class="book-img" alt="Book Cover">
                     </div>
                     <div class="card-body card-body-custom d-flex flex-column">
-                        <h5 class="card-title fw-bold mb-1"><a href="book_details.html"
+                        <h5 class="card-title fw-bold mb-1"><a href="#"
                                 class="text-decoration-none text-dark">মহাকাশের রহস্য</a></h5>
                         <p class="text-muted small mb-2">ড. মুহম্মদ জাফর ইকবাল</p>
 

@@ -123,7 +123,7 @@
                                 কিশোরদের জন্য লেখা এক অনবদ্য সায়েন্স ফিকশন।</p>
                             <div class="d-flex align-items-center gap-3">
                                 <span class="fs-4 fw-bold text-success">৳ ২৮০</span>
-                                <a href="book_details.html" class="btn btn-dark"><i class="fas fa-shopping-cart me-2"></i>
+                                <a href="#" class="btn btn-dark"><i class="fas fa-shopping-cart me-2"></i>
                                     কার্টে যোগ করুন</a>
                             </div>
                         </div>

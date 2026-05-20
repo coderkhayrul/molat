@@ -6,7 +6,7 @@
             <h2 class="fw-bold mb-0"><i class="fas fa-shield-alt text-success me-2"></i> নিরাপদ চেকআউট</h2>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb mb-0 mt-2">
-                    <li class="breadcrumb-item"><a href="cart.html" class="text-decoration-none">কার্ট</a></li>
+                    <li class="breadcrumb-item"><a href="#" class="text-decoration-none">কার্ট</a></li>
                     <li class="breadcrumb-item active" aria-current="page">চেকআউট</li>
                 </ol>
             </nav>

@@ -6,7 +6,7 @@
             <h2 class="fw-bold mb-0">অংশগ্রহণকারী প্রকাশনীসমূহ</h2>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb mb-0">
-                    <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none">হোম</a></li>
+                    <li class="breadcrumb-item"><a href="#" class="text-decoration-none">হোম</a></li>
                     <li class="breadcrumb-item active" aria-current="page">প্রকাশনী</li>
                 </ol>
             </nav>

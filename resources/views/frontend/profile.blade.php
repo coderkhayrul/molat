@@ -35,16 +35,12 @@
                             data-bs-target="#v-pills-wishlist" type="button" role="tab">
                             <i class="fas fa-heart"></i> উইশলিস্ট <span class="badge bg-warning text-dark ms-auto">৫</span>
                         </button>
-                        <button class="nav-link" id="v-pills-reviews-tab" data-bs-toggle="pill"
-                            data-bs-target="#v-pills-reviews" type="button" role="tab">
-                            <i class="fas fa-star"></i> আমার রিভিউ
-                        </button>
                         <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
                             data-bs-target="#v-pills-settings" type="button" role="tab">
                             <i class="fas fa-user-cog"></i> প্রোফাইল সেটিংস
                         </button>
                         <div class="border-top my-2"></div>
-                        <a href="login.html" class="nav-link logout-btn text-decoration-none">
+                        <a href="#" class="nav-link logout-btn text-decoration-none">
                             <i class="fas fa-sign-out-alt"></i> লগআউট
                         </a>
                     </div>
@@ -239,13 +235,6 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    <!-- Tab 4: Reviews Placeholder -->
-                    <div class="tab-pane fade" id="v-pills-reviews" role="tabpanel">
-                        <h3 class="content-title"><i class="fas fa-star text-warning me-2"></i> আমার প্রদত্ত রিভিউ</h3>
-                        <p class="text-muted">আপনার দেওয়া সবগুলো বুক রিভিউ এখানে দেখা যাবে।</p>
-                        <!-- Add review loop here -->
                     </div>
 
                     <!-- Tab 5: Profile Settings -->

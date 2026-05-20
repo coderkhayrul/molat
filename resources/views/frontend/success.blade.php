@@ -35,10 +35,10 @@
                 </div>
 
                 <div class="d-flex flex-column flex-sm-row justify-content-center gap-3 mt-4">
-                    <a href="profile.html" class="btn btn-custom btn-primary-action">
+                    <a href="#" class="btn btn-custom btn-primary-action">
                         <i class="fas fa-box-open me-2"></i> অর্ডার ট্র‍্যাক করুন
                     </a>
-                    <a href="books.html" class="btn btn-custom btn-secondary-action">
+                    <a href="#" class="btn btn-custom btn-secondary-action">
                         <i class="fas fa-shopping-bag me-2"></i> আরও বই কিনুন
                     </a>
                 </div>

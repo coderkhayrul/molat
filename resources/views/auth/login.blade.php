@@ -26,12 +26,8 @@
                     <!-- Right Side Form -->
                     <div class="col-lg-7">
                         <div class="user-login-form-col">
-
-                            {{-- <a href="home.html" class="user-back-link"><i class="fas fa-arrow-left me-2"></i> হোমে ফিরে
-                                যান</a> --}}
-
                             <div class="mb-4">
-                                <a href="home.html" class="user-login-brand">বই<span>মেলা</span></a>
+                                <a href="#" class="user-login-brand">Mo<span>lat</span></a>
                                 <h3 class="fw-bold text-dark">লগইন করুন</h3>
                                 <p class="text-muted">আপনার একাউন্টে প্রবেশ করতে ইমেইল এবং পাসওয়ার্ড দিন।</p>
                             </div>
@@ -102,7 +98,7 @@
 
                             <!-- Register Link -->
                             <div class="text-center mt-4">
-                                <p class="text-muted mb-0">একাউন্ট নেই? <a href="register.html"
+                                <p class="text-muted mb-0">একাউন্ট নেই? <a href="#"
                                         class="fw-bold text-decoration-none" style="color: var(--primary-color);">নতুন
                                         একাউন্ট তৈরি করুন</a></p>
                             </div>

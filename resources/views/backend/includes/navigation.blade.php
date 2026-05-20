@@ -23,8 +23,11 @@
                 <li>
                     <hr class="dropdown-divider">
                 </li>
-                <li><a class="dropdown-item text-danger" href="#"><i class="fas fa-sign-out-alt me-2"></i>
-                        লগআউট</a></li>
+                <li>
+                    <button class="dropdown-item text-danger" href="#">
+                        <i class="fas fa-sign-out-alt me-2"></i> লগআউট
+                    </button>
+                </li>
             </ul>
         </div>
     </div>

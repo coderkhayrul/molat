@@ -149,9 +149,9 @@
                                         <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80"
                                             class="card-img-top book-img" alt="Book Cover">
                                         <div class="card-body d-flex flex-column p-3">
-                                            <h6 class="card-title fw-bold mb-1"><a href="book_details.html"
+                                            <h6 class="card-title fw-bold mb-1"><a href="#"
                                                     class="text-dark text-decoration-none">জোছনা ও জননীর গল্প</a></h6>
-                                            <p class="small text-secondary mb-2">হুমায়ূন আহমেদ</p>
+                                            <p class="small text-secondary mb-2">হুমায়ূন আহমেদ</p>
                                             <div class="text-warning small mb-3">
                                                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i
                                                     class="fas fa-star"></i><i class="fas fa-star"></i><i

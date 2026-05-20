@@ -3,7 +3,7 @@
     <!-- Hero Banner -->
     <header class="hero-banner">
         <div class="container">
-            <h1 class="display-3 fw-bold">অমর একুশে বইমেলা ২০২৬</h1>
+            <h1 class="display-3 fw-bold">বছরজুড়ে বইয়ের উৎসব - মলাট</h1>
             <p class="lead">বইয়ের মাঝে ডানা মেলুক নতুন স্বপ্ন। আপনার প্রিয় বই এবং লেখককে খুঁজে নিন এখানে।</p>
 
             <div class="search-box">

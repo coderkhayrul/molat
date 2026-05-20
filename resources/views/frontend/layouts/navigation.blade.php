@@ -152,8 +152,7 @@
                                     প্রোফাইল</a></li>
                             <li><a class="dropdown-item" href="{{ route('frontend.user.orders') }}"><i
                                         class="fas fa-box-open me-2 text-muted"></i>
-                                    আমার
-                                    অর্ডারসমূহ</a></li>
+                                    আমার অর্ডারসমূহ</a></li>
                             <li><a class="dropdown-item" href="#"><i class="fas fa-heart me-2 text-muted"></i>
                                     উইশলিস্ট</a>
                             </li>
@@ -161,9 +160,10 @@
                                 <hr class="dropdown-divider">
                             </li>
                             <li>
-                                <a class="dropdown-item text-danger fw-bold" href="{{ route('logout') }}">
+                                <button class="dropdown-item text-danger fw-bold"
+                                    onclick="this.closest('.logout-form').submit();">
                                     <i class="fas fa-sign-out-alt me-2"></i> লগআউট
-                                </a>
+                                </button>
                             </li>
                         @endauth
                         @guest
@@ -365,6 +365,6 @@
 </div>
 
 <!-- Authentication -->
-<form class="d-none form" method="POST" action="{{ route('logout') }}">
+<form class="d-none logout-form" method="POST" action="{{ route('logout') }}">
     @csrf
 </form>

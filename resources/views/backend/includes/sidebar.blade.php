@@ -1,7 +1,7 @@
 <!-- Sidebar Navigation -->
 <aside class="sidebar" id="sidebar">
     <div class="sidebar-header">
-        <a href="admin_dashboard.html" class="sidebar-brand">বই<span>মেলা</span> অ্যাডমিন</a>
+        <a href="admin_dashboard.html" class="sidebar-brand">Mo<span>Lat</span> অ্যাডমিন</a>
     </div>
     <ul class="sidebar-menu">
         <li><a href="#" class="active"><i class="fas fa-tachometer-alt"></i> ড্যাশবোর্ড</a></li>
@@ -15,7 +15,7 @@
         <li><a href="#"><i class="fas fa-calendar-alt"></i> ইভেন্ট ম্যানেজমেন্ট</a></li>
         <li><a href="#"><i class="fas fa-newspaper"></i> ব্লগ ও সংবাদ</a></li>
         <li><a href="#"><i class="fas fa-cog"></i> সেটিংস</a></li>
-        <li class="mt-4"><a href="admin_login.html" class="text-danger"><i class="fas fa-sign-out-alt"></i>
+        <li class="mt-4"><a href="#" class="text-danger"><i class="fas fa-sign-out-alt"></i>
                 লগআউট</a>
         </li>
     </ul>

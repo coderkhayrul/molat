@@ -6,7 +6,7 @@
             <h2 class="fw-bold mb-1">মেলা প্রাঙ্গণের ইভেন্টসমূহ</h2>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb mb-0 small">
-                    <li class="breadcrumb-item"><a href="home.html" class="text-decoration-none text-muted">হোম</a></li>
+                    <li class="breadcrumb-item"><a href="#" class="text-decoration-none text-muted">হোম</a></li>
                     <li class="breadcrumb-item active fw-bold text-dark" aria-current="page">ইভেন্ট ও প্রোগ্রাম</li>
                 </ol>
             </nav>
@@ -82,8 +82,8 @@
                     <div class="event-details-content">
                         <span class="event-type-badge badge-launch-pub"><i class="fas fa-rocket me-1"></i> মোড়ক
                             উন্মোচন</span>
-                        <h3 class="event-main-title"><a href="event_detail.html"
-                                class="text-decoration-none text-dark">‘মহাকাশের রহস্য’ বইয়ের মোড়ক উন্মোচন</a></h3>
+                        <h3 class="event-main-title"><a href="#" class="text-decoration-none text-dark">‘মহাকাশের
+                                রহস্য’ বইয়ের মোড়ক উন্মোচন</a></h3>
                         <div class="event-meta-info">
                             <span><i class="far fa-clock"></i> বিকাল ৪:০০ - ৫:৩০</span>
                             <span><i class="fas fa-map-marker-alt"></i> মূল মঞ্চ, বাংলা একাডেমি</span>
@@ -92,7 +92,7 @@
                             আনুষ্ঠানিক মোড়ক উন্মোচন করা হবে। অনুষ্ঠানে বিশেষ অতিথি হিসেবে উপস্থিত থাকবেন প্রথিতযশা বিজ্ঞানী
                             ও শিক্ষাবিদগণ।</p>
                         <div class="d-flex flex-wrap gap-2">
-                            <a href="event_detail.html" class="btn btn-dark btn-sm px-4 fw-bold">বিস্তারিত দেখুন</a>
+                            <a href="#" class="btn btn-dark btn-sm px-4 fw-bold">বিস্তারিত দেখুন</a>
                             <button class="btn btn-outline-warning text-dark btn-sm fw-bold"><i
                                     class="far fa-calendar-plus me-1"></i> রিমাইন্ডার</button>
                         </div>

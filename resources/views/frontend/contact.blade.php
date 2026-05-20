@@ -6,7 +6,7 @@
             <h2 class="fw-bold mb-1">আমাদের সাথে যোগাযোগ করুন</h2>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb mb-0 small">
-                    <li class="breadcrumb-item"><a href="home.html" class="text-decoration-none text-muted">হোম</a></li>
+                    <li class="breadcrumb-item"><a href="#" class="text-decoration-none text-muted">হোম</a></li>
                     <li class="breadcrumb-item active fw-bold text-dark" aria-current="page">যোগাযোগ</li>
                 </ol>
             </nav>
