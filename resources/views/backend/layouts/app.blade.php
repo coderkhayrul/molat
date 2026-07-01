@@ -15,6 +15,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ asset('backend/css/styles.css') }}">
+    @stack('styles')
 </head>
 
 <body>
@@ -29,18 +30,19 @@
 
         <!-- Content Area -->
         <div class="content-area">
-            <h2 class="page-title">ড্যাশবোর্ড ওভারভিউ</h2>
+            @stack('content-title')
             @yield('content')
         </div>
 
         <!-- Footer in Main Content -->
         <footer class="mt-auto py-3 text-center text-muted border-top bg-white">
-            <small>© ২০২৬ বইমেলা প্রজেক্ট | অ্যাডমিন প্যানেল</small>
+            <small>© 2026 Book Fair | Admin Panel</small>
         </footer>
 
     </div>
 
     @include('backend.includes.footer')
+
 </body>
 
 </html>

@@ -1,5 +1,8 @@
 @extends('backend.layouts.app')
 @section('content')
+    @push('content-title')
+        <h2 class="page-title">Dashboard Overview </h2>
+    @endpush
     <!-- Stat Cards Row -->
     <div class="row g-4 mb-4">
         <div class="col-xl-3 col-lg-6 col-md-6">
